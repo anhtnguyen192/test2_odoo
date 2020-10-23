@@ -1,3 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_product_template,product_template_manager,model_product_template,group_advance_sale,1,1,1,1
-access_product_template_all,product_template_all,product_template_partner,,1,0,0,0
+access_product_template_all,product_template_all,model_product_template,,1,0,0,0
+access_sale_order,sale_order.sale_order,model_sale_order,,1,1,1,1
+access_sale_order_line,sale_order_line.sale_order_line,model_sale_order_line,,1,1,1,1

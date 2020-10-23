@@ -8,6 +8,7 @@
 
             <field name="default_code" position="after">
                 <field name="product_warranty"/>
+                <field name="discount_status"/>
             </field>
 
         </field>
@@ -28,4 +29,32 @@
 
         </field>
     </record>
+
+    <!-- Inherit Form View to Modify it -->
+    <record id="sale_order_form_inherit" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+
+            <field name="total_discount" position="before">
+                <field name="sale_order_discount_estimated" readonly="1"/>
+            </field>
+
+
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="sale_order_view_inherit">
+        <field name="name">sale.order.view.inherit1</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='price_unit']" position="after">
+                <field name="sale_order_discount_unit"/>
+            </xpath>
+        </field>
+    </record>
+
 </odoo>
