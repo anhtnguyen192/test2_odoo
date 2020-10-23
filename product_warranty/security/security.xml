@@ -1,0 +1,5 @@
+<odoo>
+    <record id="group_advance_sale" model="res.groups">
+        <field name="name">Advance Sale / Manager</field>
+    </record>
+</odoo>
