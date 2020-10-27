@@ -3,3 +3,4 @@ access_product_template,product_template_manager,model_product_template,group_ad
 access_product_template_all,product_template_all,model_product_template,,1,0,0,0
 access_sale_order,sale_order.sale_order,model_sale_order,,1,1,1,1
 access_sale_order_line,sale_order_line.sale_order_line,model_sale_order_line,,1,1,1,1
+access_mass_update_warranty,mass_update_warranty.mass_update_warranty,model_mass_update_warranty,,1,1,1,1

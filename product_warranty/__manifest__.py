@@ -28,7 +28,8 @@
         'security/ir.model.access.csv',
         # 'views/views.xml',
         # 'views/templates.xml',
-        'views/product_warranty.xml'
+        'views/product_warranty.xml',
+        'wizard/mass_update_warranty_form.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
